@@ -16,7 +16,7 @@
   "author": "Microsoft Corporation",
   "version": {
     "Major": 2,
-    "Minor": 186,
+    "Minor": 189,
     "Patch": 0
   },
   "releaseNotes": "ms-resource:loc.releaseNotes",
@@ -98,11 +98,20 @@
       "required": false,
       "helpMarkDown": "ms-resource:loc.input.help.retryCount",
       "groupName": "advanced"
+    },
+    {
+      "name": "ignoreMakeDirErrors",
+      "type": "boolean",
+      "label": "ms-resource:loc.input.label.ignoreMakeDirErrors",
+      "defaultValue": "false",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.ignoreMakeDirErrors",
+      "groupName": "advanced"
     }
   ],
   "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
   "execution": {
-    "Node": {
+    "Node10": {
       "target": "copyfiles.js",
       "argumentFormat": ""
     }
@@ -119,7 +128,7 @@
       "mode": "restricted"
     },
     "settableVariables": {
-        "allowed": []
+      "allowed": []
     }
   }
 }
